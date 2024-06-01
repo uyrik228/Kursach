@@ -53,7 +53,7 @@ public class ReviewServiceImpl implements ReviewService {
         rRepository.deleteById(id);
     }
 
-    @Override
+    
     public void deleteAll() {
         rRepository.deleteAll();
     }
