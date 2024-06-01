@@ -101,4 +101,9 @@ public class ReviewController extends AbstractController<Review>{
 		return new ResponseEntity<>(reviews, HttpStatus.OK);
 	}
 
+	@DeleteMapping("/deleteAll")
+	public ResponseEntity<String> deleteAll() {
+		service.deleteAll();
+		return new ResponseEntity<>(HttpStatus.OK);
+	}
 }
