@@ -53,6 +53,10 @@ public class ReviewServiceImpl implements ReviewService {
         rRepository.deleteById(id);
     }
 
+    public void deleteAll() {
+        rRepository.deleteAll();
+    }
+
     @Override
     public void edit(Review entity) {
         rRepository.save(entity);
